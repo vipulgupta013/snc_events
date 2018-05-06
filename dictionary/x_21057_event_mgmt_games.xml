@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Games" max_length="40" name="x_21057_event_mgmt_games" type="collection">
+        <element label="Event Name" max_length="32" name="event_name" reference="x_21057_event_mgmt_events" type="reference"/>
+        <element label="Maximum Time (mins)" max_length="40" name="maximum_time" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Number of Assets" max_length="40" name="number_of_assets" type="integer"/>
+        <element label="Number of Rounds" max_length="40" name="number_of_rounds" type="integer"/>
+        <element label="Rules" max_length="4000" name="rules" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Singles" sequence="10" value="Singles"/>
+                <element label="Doubles" sequence="20" value="Doubles"/>
+                <element label="Both" sequence="30" value="Both"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="event_name"/>
+        </index>
+    </element>
+</database>

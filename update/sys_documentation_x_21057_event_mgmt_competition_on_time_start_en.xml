@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="on_time_start" label="On Time Start" language="en" table="x_21057_event_mgmt_competition">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>on_time_start</element>
+            <help/>
+            <hint/>
+            <label>On Time Start</label>
+            <language>en</language>
+            <name>x_21057_event_mgmt_competition</name>
+            <plural>On Time Starts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:31:49</sys_created_on>
+            <sys_id>448f325f37b91300be69dc1873990ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>On Time Start</sys_name>
+            <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+            <sys_update_name>sys_documentation_x_21057_event_mgmt_competition_on_time_start_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:31:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

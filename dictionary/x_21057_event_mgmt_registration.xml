@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Registration" max_length="40" name="x_21057_event_mgmt_registration" type="collection">
+        <element label="Event" max_length="32" name="event" reference="x_21057_event_mgmt_events" type="reference"/>
+        <element label="Game" max_length="32" name="game" reference="x_21057_event_mgmt_games" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Participant 1" max_length="32" name="participant_1" reference="sys_user" type="reference"/>
+        <element label="Participant 2" max_length="32" name="participant_2" reference="sys_user" type="reference"/>
+        <element choice="1" label="Single/Doubles" max_length="40" name="single_doubles" type="choice">
+            <choice>
+                <element label="Singles" sequence="10" value="Singles"/>
+                <element label="Doubles" sequence="20" value="Doubles"/>
+                <element label="Both" sequence="30" value="Both"/>
+            </choice>
+        </element>
+        <element label="Team Name" max_length="40" name="team_name" type="string"/>
+        <index name="index">
+            <element name="game"/>
+        </index>
+        <index name="index2">
+            <element name="participant_2"/>
+        </index>
+        <index name="index3">
+            <element name="participant_1"/>
+        </index>
+        <index name="index4">
+            <element name="event"/>
+        </index>
+    </element>
+</database>

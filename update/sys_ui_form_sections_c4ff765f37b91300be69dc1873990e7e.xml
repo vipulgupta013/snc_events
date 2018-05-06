@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="c4ff765f37b91300be69dc1873990e7e" sys_domain="global" table="x_21057_event_mgmt_competition" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:33:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88ff765f37b91300be69dc1873990e80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_21057_event_mgmt_competition" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">c4ff765f37b91300be69dc1873990e7e</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">76acbe1b37b91300be69dc1873990eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:33:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:33:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44ff765f37b91300be69dc1873990e81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_21057_event_mgmt_competition" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">c4ff765f37b91300be69dc1873990e7e</sys_ui_form>
+            <sys_ui_section caption="Competitor Details" display_value="Competitor Details" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">80ff765f37b91300be69dc1873990e7d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:33:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:33:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccffb65f37b91300be69dc1873990e00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_21057_event_mgmt_competition" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">c4ff765f37b91300be69dc1873990e7e</sys_ui_form>
+            <sys_ui_section caption="Referee Feedback" display_value="Referee Feedback" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">88ff765f37b91300be69dc1873990e7d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:33:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:48:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f33c7df37b91300be69dc1873990e14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_21057_event_mgmt_competition" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">c4ff765f37b91300be69dc1873990e7e</sys_ui_form>
+            <sys_ui_section caption="Rounds" display_value="Rounds" name="x_21057_event_mgmt_competition" sys_domain="global" view="Default view">db33c7df37b91300be69dc1873990e12</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:48:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_21057_event_mgmt_competition</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:33:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4ff765f37b91300be69dc1873990e7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_21057_event_mgmt_competition</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c4ff765f37b91300be69dc1873990e7e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:33:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

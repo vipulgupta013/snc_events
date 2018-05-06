@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="6acc30db37b51300be69dc1873990ed0" sys_domain="global" table="x_21057_event_mgmt_games" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 05:00:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2acc30db37b51300be69dc1873990ed2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_21057_event_mgmt_games" name="x_21057_event_mgmt_games" sys_domain="global" view="Default view">6acc30db37b51300be69dc1873990ed0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_21057_event_mgmt_games" sys_domain="global" view="Default view">be3b7c5b37b51300be69dc1873990e72</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 05:00:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_21057_event_mgmt_games</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 05:00:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6acc30db37b51300be69dc1873990ed0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_21057_event_mgmt_games</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+            <sys_update_name>sys_ui_form_sections_6acc30db37b51300be69dc1873990ed0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 05:00:43</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

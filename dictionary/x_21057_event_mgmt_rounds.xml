@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Rounds" max_length="40" name="x_21057_event_mgmt_rounds" type="collection">
+        <element label="Competition" max_length="32" name="competition" reference="x_21057_event_mgmt_competition" type="reference"/>
+        <element label="Competitor 1" max_length="32" name="competitor_1" reference="x_21057_event_mgmt_registration" type="reference"/>
+        <element label="Competitor 1 Score" max_length="40" name="competitor_1_score" type="integer"/>
+        <element label="Competitor 2" max_length="32" name="competitor_2" reference="x_21057_event_mgmt_registration" type="reference"/>
+        <element label="Competitor 2 Score" max_length="40" name="competitor_2_score" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="competitor_2"/>
+        </index>
+        <index name="index2">
+            <element name="competitor_1"/>
+        </index>
+        <index name="index3">
+            <element name="competition"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="competitor_1_score" label="Competitor 1 Score" language="en" table="x_21057_event_mgmt_rounds">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>competitor_1_score</element>
+            <help/>
+            <hint/>
+            <label>Competitor 1 Score</label>
+            <language>en</language>
+            <name>x_21057_event_mgmt_rounds</name>
+            <plural>Competitor 1 Scores</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-06 14:38:27</sys_created_on>
+            <sys_id>9901039f37b91300be69dc1873990eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Competitor 1 Score</sys_name>
+            <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+            <sys_update_name>sys_documentation_x_21057_event_mgmt_rounds_competitor_1_score_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-06 14:38:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

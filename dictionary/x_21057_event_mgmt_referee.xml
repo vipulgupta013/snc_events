@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Referee" max_length="40" name="x_21057_event_mgmt_referee" type="collection">
+        <element label="Any Comments" max_length="4000" name="any_comments" type="string"/>
+        <element label="Event" max_length="32" name="event" reference="x_21057_event_mgmt_events" type="reference"/>
+        <element label="Game" max_length="32" name="game" reference="x_21057_event_mgmt_games" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Referee" max_length="32" name="referee" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="game"/>
+        </index>
+        <index name="index2">
+            <element name="event"/>
+        </index>
+        <index name="index3">
+            <element name="referee"/>
+        </index>
+    </element>
+</database>
