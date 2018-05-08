@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Create Competitions</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[runScript = function () {
+	var stage;
+	//Check, whether we are running calculations first time or not.
+	if (checkStage() == 'false'){
+		stage = '1';
+	}   
+	else {
+		stage = getStage();
+	}
+	var reg = [];
+	gs.info('vipul-count '+stage);
+	reg = getAllCompetitors(stage);
+	var comp = [];
+	
+	comp = prepareCompetitions(reg);
+	
+	comp = assignReferee(comp);
+	
+	createCompetitions(comp);
+	
+	//Create Competitions
+};
+
+checkStage = function (){
+	var gr_comp = new GlideRecord('x_21057_event_mgmt_competition');
+	gr_comp.addQuery('event', current.event);
+	gr_comp.addQuery('game', current.game);
+	gr_comp.addQuery('type', current.game_type);
+	gr_comp.addQuery('stage', '1');
+	gr_comp.query();
+	if(!gr_comp.hasNext()) 
+		return 'false';
+};
+getStage = function (){
+	var gr_comp = new GlideRecord('x_21057_event_mgmt_competition');
+	gr_comp.addQuery('event', current.event);
+	gr_comp.addQuery('game', current.game);
+	gr_comp.addQuery('type', current.game_type);
+	gr_comp.orderByDesc('stage');
+	gr_comp.setLimit(1);
+	gr_comp.query();
+	if (gr_comp.next()) {
+		return gr_comp.stage+1;
+	}
+};
+
+getAllCompetitors = function(stage) {
+	if(stage == '1') {
+		var gr = new GlideRecord('x_21057_event_mgmt_registration');
+		gr.addQuery('event', current.event);
+		gr.addQuery('game', current.game);
+		gr.addQuery('single_doubles', current.game_type);
+		gr.query();
+		var count = gr.getRowCount();
+		var reg = [];
+		var i=0;
+		while(gr.next()) {
+			i++;
+			reg.push(gr.getValue('sys_id'));
+		}
+	}
+	return reg;
+};
+	
+prepareCompetitions = function(reg){
+	var comp=[];
+	var c_count=0;
+	var random_number = [];
+	var a = [];
+	var count = reg.length;
+	var final_count = Math.round(count/2);
+	
+	var noCompetitor = 0;  // Number of Competitor per match
+	for (var i=0;i<reg.length;i++) {
+		var flag = true;
+		while(flag) {
+			var random = Math.floor(Math.random()*count);
+			if(random_number.indexOf(random) < 0) {
+				random_number.push(random);
+				if(noCompetitor < 2) {
+					a['Competitor'+noCompetitor] = reg[random];
+					noCompetitor = noCompetitor +1;
+				} 
+                if(noCompetitor == 2 || (random_number.length == reg.length && count%2==1)) {
+                    if((random_number.length == reg.length && reg.length%2==1)) {
+                        a['Competitor'+noCompetitor] = 0;
+                    }
+                    comp.push(a);
+                    a = [];
+                    noCompetitor = 0;
+				}
+				flag = false;
+			} else {
+				flag = true;
+			}
+		}
+	}
+return comp;
+};
+
+createCompetitions = function(comp) {
+	for (var i=0; i<comp.length; i++) {
+		var gr_comp = new GlideRecord('x_21057_event_mgmt_competition');
+		gr_comp.initialize();
+		gr_comp.event = current.event;
+		gr_comp.game = current.game;
+		gr_comp.type = current.game_type;
+		gr_comp.competitor_1 = comp[i]['Competitor0'];
+		gr_comp.competitor_2 = comp[i]['Competitor1'];
+		gr_comp.referee = comp[i]['Referee'];
+		gr_comp.insert();
+	}
+};
+
+assignReferee = function(comp) {
+	var gr_Referee = new GlideRecord('x_21057_event_mgmt_referee');
+	gr_Referee.addQuery('event', current.event);
+	gr_Referee.addQuery('game', current.game);
+	gr_Referee.query();
+	var Referee_array = [];
+	var count_Referee = 0;
+	while(gr_Referee.next()) {
+		count_Referee = count_Referee+1;
+		Referee_array.push(gr_Referee.getValue('sys_id'));
+	}
+	var random_number = [];
+	var count=0;
+	for (var i=0; i<comp.length; i++) {
+		var flag = true;
+		while(flag) {
+			if(comp[i]['Competitor0'] == Referee_array[count] || comp[i]['Competitor0'] == Referee_array[count]){
+				flag=true;
+			}
+			else {
+				flag=false;
+				comp[i]['Referee'] = Referee_array[count];
+			}
+			count=count+1;
+			if(count == count_Referee) 
+				count=0;
+		}
+	}
+	return comp;
+};
+
+runScript();]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-07 09:01:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10cabea337f15300be69dc1873990e5b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Create Competitions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+        <sys_update_name>sys_ui_action_10cabea337f15300be69dc1873990e5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-07 14:10:15</sys_updated_on>
+        <table>x_21057_event_mgmt_comp_calculations</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

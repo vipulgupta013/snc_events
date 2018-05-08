@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-07 15:03:53</sys_created_on>
+        <sys_id>3b6094ff37755300be69dc1873990ec7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_21057_event_mgmt_company_holiday.x_21057_event_mgmt.company_holiday_user</sys_name>
+        <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+        <sys_security_acl display_value="x_21057_event_mgmt_company_holiday">3b6094ff37755300be69dc1873990eb8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_3b6094ff37755300be69dc1873990ec7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-07 15:03:53</sys_updated_on>
+        <sys_user_role display_value="x_21057_event_mgmt.company_holiday_user" name="x_21057_event_mgmt.company_holiday_user">eb6094bf37755300be69dc1873990ebe</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

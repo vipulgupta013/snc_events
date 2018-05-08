@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Company Holiday" max_length="40" name="x_21057_event_mgmt_company_holiday" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Holiday Date" max_length="40" name="holiday_date" type="glide_date"/>
+        <element label="Holiday Name" max_length="40" name="holiday_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

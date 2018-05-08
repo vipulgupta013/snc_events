@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Comp Calculations" max_length="40" name="x_21057_event_mgmt_comp_calculations" type="collection">
+        <element label="Event" max_length="32" name="event" reference="x_21057_event_mgmt_events" type="reference"/>
+        <element label="Game" max_length="32" name="game" reference="x_21057_event_mgmt_games" reference_qual="javascript:EventUtil.gameRefQualifier(current.event)" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element choice="3" choice_field="type" dependent="game" dependent_on_field="game" label="Game Type" max_length="40" name="game_type" type="choice" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Stage" max_length="40" name="stage" type="string"/>
+        <index name="index">
+            <element name="game"/>
+        </index>
+        <index name="index2">
+            <element name="event"/>
+        </index>
+    </element>
+</database>

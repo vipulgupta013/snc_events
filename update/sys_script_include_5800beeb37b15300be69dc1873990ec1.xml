@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_21057_event_mgmt.EventUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EventUtil</name>
+        <script><![CDATA[var EventUtil = Class.create();
+
+EventUtil.gameRefQualifier = function(event) {
+	gs.info('vipul - '+event);
+	var result = "event_nameIN"+event;
+	return result;
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-07 08:04:01</sys_created_on>
+        <sys_id>5800beeb37b15300be69dc1873990ec1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>EventUtil</sys_name>
+        <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+        <sys_update_name>sys_script_include_5800beeb37b15300be69dc1873990ec1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-07 08:24:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

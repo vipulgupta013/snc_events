@@ -19,6 +19,7 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="On Time Start" max_length="40" name="on_time_start" type="boolean"/>
         <element label="Referee" max_length="32" name="referee" reference="x_21057_event_mgmt_referee" type="reference"/>
+        <element label="Schedule" max_length="32" name="schedule" reference="cmn_schedule" type="reference"/>
         <element choice="3" label="Stage" max_length="40" name="stage" type="choice">
             <choice>
                 <element label="Stage 1" sequence="1" value="1"/>
@@ -33,6 +34,13 @@
                 <element label="Stage 10" sequence="10" value="10"/>
             </choice>
         </element>
+        <element choice="3" choice_field="type" choice_table="x_21057_event_mgmt_games" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Singles" sequence="0" value="Singles"/>
+                <element label="Doubles" sequence="1" value="Doubles"/>
+                <element label="Both" sequence="2" value="Both"/>
+            </choice>
+        </element>
         <element label="Winner" max_length="32" name="winner" reference="x_21057_event_mgmt_registration" type="reference"/>
         <index name="index">
             <element name="competitor_2"/>
@@ -41,15 +49,18 @@
             <element name="competitor_1"/>
         </index>
         <index name="index3">
-            <element name="game"/>
+            <element name="schedule"/>
         </index>
         <index name="index4">
-            <element name="winner"/>
+            <element name="game"/>
         </index>
         <index name="index5">
-            <element name="event"/>
+            <element name="winner"/>
         </index>
         <index name="index6">
+            <element name="event"/>
+        </index>
+        <index name="index7">
             <element name="referee"/>
         </index>
     </element>

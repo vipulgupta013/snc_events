@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_21057_event_mgmt.DateTimeUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DateTimeUtil</name>
+        <script><![CDATA[var DateTimeUtil = Class.create();
+DateTimeUtil.prototype = {
+    initialize: function() {
+    },
+	
+	event_getDateTimeDiff: function(regEndDate, regStartDate, compEndDate, compStartDate){
+		var regEndDate_ms = this._getms(regEndDate);
+		var regStartDate_ms = this._getms(regStartDate);
+		var compEndDate_ms = this._getms(compEndDate);
+		var compStartDate_ms = this._getms(compStartDate);
+		var result = '';
+		var diff = 0;
+		
+		/*Validation - 1: Event Registeration End Date should be after than Event Registration Start Date.*/
+		
+		diff = this._getDiff(regStartDate_ms, regEndDate_ms, 'day');
+		if(diff >= 0) 
+			result+= "<b>Event Registeration End Date</b> should be <b>after</b> than <b>Event Registration Start Date</b>.<br>";
+		
+		/*Validation - 2: Event Competition End Date should be after than Event Competition End Date.*/
+		
+		diff = this._getDiff(compStartDate_ms, compEndDate_ms, 'day');
+		if(diff >= 0) 
+			result+= "<b>Event Competition End Date</b> should be <b>after</b> than <b>Event Competition Start Date</b>.<br>";
+		
+		/*Validation - 3: Event Competition Start Date should be after than Event Registration End Date.*/
+		
+		diff = this._getDiff(regEndDate_ms, compEndDate_ms, 'day');
+		if(diff >= 0) 
+			result+= "<b>Event Competition Start Date</b> should be <b>after</b> than <b>Event Registration End Date</b>.<br>";
+
+		return result;
+	},
+	
+	
+	getDateTimeDiff: function(date1, date2, diffType){
+		var date1_ms = this._getms(date1); //First Date-Time Field
+		var date2_ms = this._getms(date2); // Second Date-Time Field
+		var diff = this._getDiff(date1_ms, date2_ms, diffType);
+		return diff;
+	},
+	
+	/*This function will accept a date and return it's numeric value. Means, total number of milliseconds from 01-01-1970 00:00:00*/
+	_getms : function (date){
+		var v_date = new GlideDate();
+		v_date.setValue(date);
+		return v_date.getNumericValue();
+	},
+	
+	_getDiff : function(date1, date2, diffType){
+		var diff = date1 - date2;
+		var timediff = this._calcDateDiff(diffType, diff);
+		return timediff;
+	},
+	
+	_calcDateDiff: function(diffType, milliseconds){
+		var thisdiff;
+		if (diffType == "day"){thisdiff = (milliseconds/1000)/86400;}
+		else if (diffType == "hour"){thisdiff = (milliseconds/1000)/3600;}
+		else if (diffType == "minute"){thisdiff = (milliseconds/1000)/60;}
+		else if (diffType == "second"){thisdiff = (milliseconds/1000);}
+		else {thisdiff = (milliseconds/1000);}
+		return thisdiff;
+	},
+	
+    type: 'DateTimeUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-07 06:10:52</sys_created_on>
+        <sys_id>68465eeb37715300be69dc1873990ef5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>DateTimeUtil</sys_name>
+        <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
+        <sys_update_name>sys_script_include_68465eeb37715300be69dc1873990ef5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-07 06:29:20</sys_updated_on>
+    </sys_script_include>
+</record_update>

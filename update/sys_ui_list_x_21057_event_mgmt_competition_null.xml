@@ -4,107 +4,137 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>fc40435f37b91300be69dc1873990eb1</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>e022003b37755300be69dc1873990eb5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>event</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>7040435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>6822003b37755300be69dc1873990eb5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>game</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>f040435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>e822003b37755300be69dc1873990eb5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>competition_date_time</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>7440435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>6c22003b37755300be69dc1873990eb5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>competitor_1</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <element>referee</element>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>f440435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>ec22003b37755300be69dc1873990eb5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>competitor_2</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <element>competitor_1</element>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>7840435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>e422803b37755300be69dc1873990ec0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>winner</element>
-            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7840435f37b91300be69dc1873990eb1</list_id>
+            <element>competitor_2</element>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
-            <sys_id>f840435f37b91300be69dc1873990eb2</sys_id>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>6822803b37755300be69dc1873990ec0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>average_score</element>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>e822803b37755300be69dc1873990ec0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>winner</element>
+            <list_id display_value="x_21057_event_mgmt_competition" element="NULL" name="x_21057_event_mgmt_competition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6822003b37755300be69dc1873990eb4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
+            <sys_id>6c22803b37755300be69dc1873990ec0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -118,10 +148,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-06 14:35:09</sys_created_on>
+            <sys_created_on>2018-05-07 14:01:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7840435f37b91300be69dc1873990eb1</sys_id>
+            <sys_id>6822003b37755300be69dc1873990eb4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_21057_event_mgmt_competition</sys_name>
             <sys_package display_value="Event Management" source="x_21057_event_mgmt">7141468737311300be69dc1873990ed3</sys_package>
@@ -129,7 +159,7 @@
             <sys_scope display_value="Event Management">7141468737311300be69dc1873990ed3</sys_scope>
             <sys_update_name>sys_ui_list_x_21057_event_mgmt_competition_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-06 14:35:09</sys_updated_on>
+            <sys_updated_on>2018-05-07 14:01:25</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
